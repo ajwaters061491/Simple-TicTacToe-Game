@@ -1,0 +1,52 @@
+td {
+    border: 2px solid #333333;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px; /*move the edge further left of center*/
+    top: 50px;
+}
+
+/*Begin outer line removal*/
+table tr:first-child td { /*targets the top line and removes it*/
+    border-top: 0;
+}
+
+table tr:last-child td { /*targets the bottom line and removes it*/
+    border-bottom: 0;
+}
+
+table tr td:first-child  { /*targets the left line and removes it*/
+    border-left: 0;
+}
+
+table tr td:last-child  { /*targets the right line and removes it*/
+    border-right: 0;
+}
+/*End outer line removal*/
+
+.endgame {
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: rgba(205, 133, 63, 0.8); /*may change color later*/
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
